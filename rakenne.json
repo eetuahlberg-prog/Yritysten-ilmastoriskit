@@ -1,0 +1,1149 @@
+{
+  "version": "1.1",
+  "date": "2026-09-11",
+  "sources": {
+    "PK": {
+      "title": "Pohjois-Karjalan sopeutumisen tiekartta (2025)",
+      "url": "https://pohjois-karjala.fi/wp-content/uploads/2025/04/Pohjois-Karjalan-ilmastonmuutokseen-sopeutumisen-tiekartta.pdf"
+    },
+    "IA": {
+      "title": "ILMASTOARVO (2026)",
+      "url": "https://www.helsinki.fi/assets/drupal/2026-02/ILMASTOARVO%202026.pdf"
+    }
+  },
+  "features": {
+    "premises": "Toimitilat, piha tai varasto",
+    "production": "Tuotanto, koneet tai prosessit",
+    "cold": "Kylmäketju tai jäähdytys",
+    "water": "Toiminta tarvitsee vettä",
+    "outdoor": "Ulkotyö tai ulkona palveleminen",
+    "routes": "Ihmisten tai tavaran kuljetukset",
+    "winter": "Lumesta, pakkasesta tai jäästä riippuva toiminta",
+    "nature": "Luontokohteet, vesistöt tai luonnontuotteet",
+    "forest": "Metsätalous tai puuraaka-aine",
+    "farm": "Viljely tai eläintuotanto",
+    "ice": "Luonnon jäällä toimiva palvelu tai työ",
+    "seasonal": "Säästä riippuva sesonki"
+  },
+  "industries": {
+    "services": {
+      "label": "Asiantuntija- ja muut palvelut",
+      "features": [
+        "premises"
+      ]
+    },
+    "industry": {
+      "label": "Teollisuus ja valmistus",
+      "features": [
+        "premises",
+        "production",
+        "routes",
+        "water"
+      ]
+    },
+    "tourism": {
+      "label": "Matkailu ja ohjelmapalvelut",
+      "features": [
+        "premises",
+        "outdoor",
+        "routes",
+        "nature",
+        "seasonal",
+        "winter"
+      ]
+    },
+    "trade": {
+      "label": "Kauppa, ravintolat ja majoitus",
+      "features": [
+        "premises",
+        "cold",
+        "water",
+        "routes",
+        "seasonal"
+      ]
+    },
+    "construction": {
+      "label": "Rakentaminen ja kuljetus",
+      "features": [
+        "premises",
+        "outdoor",
+        "routes",
+        "production"
+      ]
+    },
+    "primary": {
+      "label": "Maa- ja metsätalous",
+      "features": [
+        "premises",
+        "outdoor",
+        "routes",
+        "forest",
+        "farm",
+        "water",
+        "production"
+      ]
+    },
+    "other": {
+      "label": "Muu tai useita toimialoja",
+      "features": []
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Rankkasade ja hulevesi",
+      "text": "Voiko rankkasade tuoda vettä tiloihin tai estää pihan ja lastausalueen käytön?",
+      "features": [
+        "premises"
+      ],
+      "hint": "Ajattele myös vuokratiloja, kellareita, varastoja ja ulkona säilytettävää tavaraa.",
+      "refs": {
+        "PK": [
+          9,
+          16,
+          17,
+          29
+        ],
+        "IA": [
+          4,
+          6,
+          12
+        ]
+      },
+      "basis": "Hulevesi ja kiinteistöt"
+    },
+    {
+      "id": "Q02",
+      "title": "Vesistön vedenkorkeus",
+      "text": "Voiko järven tai joen vedenkorkeus haitata toimitilaa, rantapalvelua tai yrityksen käyttämää reittiä?",
+      "features": [
+        "premises",
+        "nature",
+        "routes"
+      ],
+      "hint": "Pohdi tulvaa ja matalaa vedenpintaa toimipaikan tai käytetyn kohteen sijainnin perusteella.",
+      "refs": {
+        "PK": [
+          9,
+          17,
+          22,
+          96
+        ],
+        "IA": [
+          4,
+          6
+        ]
+      },
+      "basis": "Vesistöt ja sijainti"
+    },
+    {
+      "id": "Q03",
+      "title": "Rakennusten kosteus",
+      "text": "Voivatko vesisateet, sulamisvedet tai kosteus vaurioittaa rakennusta, varastoa tai laitteita?",
+      "features": [
+        "premises"
+      ],
+      "hint": "Onko veden ohjauksessa, katossa, rakenteissa tai kunnossapidossa epäselviä kohtia?",
+      "refs": {
+        "PK": [
+          13,
+          29
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Kosteusrasitus"
+    },
+    {
+      "id": "Q04",
+      "title": "Kuumuus työssä",
+      "text": "Voiko kuumuus haitata sinun tai henkilöstön jaksamista, turvallista työskentelyä tai työn sujumista?",
+      "features": [],
+      "hint": "Huomioi myös yksinyrittäjä, sisätilat, asiakastyö ja raskas ulkotyö.",
+      "refs": {
+        "PK": [
+          20,
+          21,
+          28
+        ],
+        "IA": [
+          6,
+          12
+        ]
+      },
+      "basis": "Helle ja työolot"
+    },
+    {
+      "id": "Q05",
+      "title": "Jäähdytys ja kylmäketju",
+      "text": "Voiko helle ylittää jäähdytyksen riittävyyden tai haitata laitteita, tuotantoa tai kylmäketjua?",
+      "features": [
+        "production",
+        "cold"
+      ],
+      "hint": "Mikä tuote, prosessi tai laite ei siedä lämpötilan nousua?",
+      "refs": {
+        "PK": [
+          20,
+          21,
+          30
+        ],
+        "IA": [
+          6,
+          9,
+          12
+        ]
+      },
+      "basis": "Jäähdytysriippuvuus"
+    },
+    {
+      "id": "Q06",
+      "title": "Sähkökatko",
+      "text": "Voiko sään aiheuttama pidempi sähkökatko pysäyttää yrityksen olennaisen toiminnon?",
+      "features": [],
+      "hint": "Pohdi esimerkiksi koneita, maksamista, ilmanvaihtoa tai lämmitystä. Arvioi oma toimintasi, älä vain verkon yleistä luotettavuutta.",
+      "refs": {
+        "PK": [
+          19,
+          20,
+          30
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Energia ja varajärjestelmät"
+    },
+    {
+      "id": "Q07",
+      "title": "Tietoliikennekatko",
+      "text": "Voiko säästä johtuva tietoliikenne- tai sähköhäiriö estää tilaukset, maksamisen, ohjauksen tai yhteydenpidon?",
+      "features": [],
+      "hint": "Huomioi myös ulkopuoliset palvelut, joita ilman oma työ ei onnistu. Kyberturvallisuus ei kuulu tähän arvioon.",
+      "refs": {
+        "PK": [
+          20
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Tietoliikenteen sääriippuvuus"
+    },
+    {
+      "id": "Q08",
+      "title": "Veden saatavuus ja laatu",
+      "text": "Voiko kuivuus, tulva tai veden laadun häiriö keskeyttää veden varassa olevan toiminnon?",
+      "features": [
+        "water"
+      ],
+      "hint": "Ajattele puhdistusta, elintarvikkeita, tuotantoa, jäähdytystä, kastelua tai eläimiä.",
+      "refs": {
+        "PK": [
+          17,
+          21,
+          30,
+          31
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Vesi ja kuivuus"
+    },
+    {
+      "id": "Q09",
+      "title": "Kuljetusten katkeaminen",
+      "text": "Voiko sää estää työntekijöitä, asiakkaita tai tavaraa pääsemästä perille?",
+      "features": [
+        "routes"
+      ],
+      "hint": "Onko käytössä yksi hankalasti korvattava tieyhteys, lastauspaikka tai kuljetusketju?",
+      "refs": {
+        "PK": [
+          16,
+          18,
+          19,
+          27,
+          96
+        ],
+        "IA": [
+          6,
+          11
+        ]
+      },
+      "basis": "Etäisyydet ja reittien häiriöt"
+    },
+    {
+      "id": "Q10",
+      "title": "Liukkaus ja lumityöt",
+      "text": "Voivatko liukkaus, jäätyvä vesi tai lumityöt estää turvallisen liikkumisen ja työn yrityksen alueella?",
+      "features": [
+        "premises",
+        "outdoor",
+        "routes"
+      ],
+      "hint": "Huomioi asiakassisäänkäynnit, pihat ja lastaus. Kuka vastaa niistä käytännössä?",
+      "refs": {
+        "PK": [
+          18,
+          27
+        ],
+        "IA": [
+          6,
+          9,
+          12
+        ]
+      },
+      "basis": "Talvikunnossapito"
+    },
+    {
+      "id": "Q11",
+      "title": "Myrsky ja ulkotyö",
+      "text": "Voiko voimakas tuuli, ukkonen tai kaatuva puu vaurioittaa omaisuutta tai pakottaa keskeyttämään työn?",
+      "features": [
+        "premises",
+        "outdoor",
+        "routes"
+      ],
+      "hint": "Pohdi ulkona tehtävää työtä, varastointia, rakenteita ja asiakkaiden turvallisuutta. Kysymys ei väitä tuulien voimistuvan kaikissa kohteissa.",
+      "refs": {
+        "PK": [
+          19,
+          20,
+          29,
+          31
+        ],
+        "IA": [
+          6,
+          12
+        ]
+      },
+      "basis": "Myrskyaltistus"
+    },
+    {
+      "id": "Q12",
+      "title": "Kelirikko ja kantavuus",
+      "text": "Voivatko kelirikko tai roudan vähyys estää raskaan kuljetuksen, koneen käytön tai pääsyn työkohteeseen?",
+      "features": [
+        "forest",
+        "farm",
+        "outdoor",
+        "routes"
+      ],
+      "hint": "Pohdi yksityisteitä, metsä- ja peltokohteita sekä ajoituksen joustoa.",
+      "refs": {
+        "PK": [
+          18,
+          21,
+          26,
+          27
+        ],
+        "IA": [
+          6,
+          11
+        ]
+      },
+      "basis": "Routa ja kantavuus"
+    },
+    {
+      "id": "Q13",
+      "title": "Lumi- ja jääkausi",
+      "text": "Onko myytävä palvelu tai työ riippuvainen riittävästä lumesta, pakkasesta tai turvallisesta jäästä?",
+      "features": [
+        "winter",
+        "ice"
+      ],
+      "hint": "Mitä tapahtuu myynnille ja sovituille töille, jos kausi jää lyhyeksi tai olot vaihtelevat nopeasti?",
+      "refs": {
+        "PK": [
+          18,
+          31
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Talvisesonki"
+    },
+    {
+      "id": "Q14",
+      "title": "Kuivuus ja maastopalo",
+      "text": "Voivatko kuiva maasto tai maastopalot estää työn, luonnon käytön tai asiakkaiden pääsyn kohteeseen?",
+      "features": [
+        "outdoor",
+        "nature",
+        "forest",
+        "farm"
+      ],
+      "hint": "Arvioi myös työn keskeytystarve ja omaisuuden altistuminen. Kasteluveden tarve arvioidaan vesikysymyksessä.",
+      "refs": {
+        "PK": [
+          20,
+          21,
+          32,
+          96
+        ],
+        "IA": [
+          6,
+          12
+        ]
+      },
+      "basis": "Kuivuus ja paloriski"
+    },
+    {
+      "id": "Q15",
+      "title": "Luonnon tuotantokyky",
+      "text": "Voivatko kasvupaikkojen, lajiston, tuholaisten tai vesistön tilan muutokset heikentää yrityksen raaka-ainetta tai palvelua?",
+      "features": [
+        "nature",
+        "forest",
+        "farm"
+      ],
+      "hint": "Pohdi esimerkiksi puuta, satoa, kalaa, luonnontuotteita ja luontokohteen käyttökelpoisuutta.",
+      "refs": {
+        "PK": [
+          15,
+          21,
+          22,
+          26,
+          31,
+          32
+        ],
+        "IA": [
+          4,
+          6
+        ]
+      },
+      "basis": "Luontoriippuvuudet"
+    },
+    {
+      "id": "Q16",
+      "title": "Kriittinen toimittaja",
+      "text": "Onko yrityksellä tärkeä toimittaja, materiaali tai palvelu, jonka säästä johtuvaa katkosta on vaikea korvata?",
+      "features": [],
+      "hint": "Tarkastele toimittajan sijaintia ja riippuvuuksia myös Pohjois-Karjalan ulkopuolella. Fyysinen säävahinko voi välittyä yritykseen ketjun kautta.",
+      "refs": {
+        "PK": [
+          15
+        ],
+        "IA": [
+          4,
+          6,
+          11
+        ]
+      },
+      "basis": "Ilmaston heijastevaikutukset"
+    },
+    {
+      "id": "Q17",
+      "title": "Kysyntä ja sesonki",
+      "text": "Voivatko muuttuvat sääolot siirtää asiakaskysyntää, lyhentää myyntikautta tai aiheuttaa peruutuksia?",
+      "features": [],
+      "hint": "Ajattele omia asiakkaita ja heidän toimintaansa. Tässä ei arvioida ilmastopolitiikan tai vastuullisuusvaatimusten vaikutuksia.",
+      "refs": {
+        "PK": [
+          18,
+          22,
+          31
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Säähän liittyvä kysyntä"
+    },
+    {
+      "id": "Q18",
+      "title": "Keskeytyksen seuraukset",
+      "text": "Voisiko yhtäaikainen säästä johtuva häiriö omassa toiminnassa ja kumppaneilla ylittää yrityksen kyvyn jatkaa tai palautua?",
+      "features": [],
+      "hint": "Mikä toiminto on saatava ensin käyntiin, kuinka pitkä katko on siedettävä ja mitä kustannuksia katko aiheuttaa? Tarkasteluaika ja euromäärät ovat yrityksen omia.",
+      "refs": {
+        "PK": [
+          15,
+          19,
+          20
+        ],
+        "IA": [
+          4,
+          6,
+          7,
+          9
+        ]
+      },
+      "basis": "Ketjuuntuvat häiriöt"
+    }
+  ],
+  "actions": [
+    {
+      "id": "A01",
+      "title": "Kartoita veden reitti kiinteistöllä",
+      "group": "Tilat ja työympäristö",
+      "questions": [
+        "Q01"
+      ],
+      "features": [
+        "premises"
+      ],
+      "first": "Käy kiinteistön ylläpitäjän kanssa läpi veden sisääntulokohdat, pihan kallistukset ja kuivatus. Nimeä tärkein tarkistettava kohta.",
+      "refs": {
+        "PK": [
+          29
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Kiinteistön vesienhallinnan yrityssovellus"
+    },
+    {
+      "id": "A02",
+      "title": "Suojaa tulvalle alttiit kohteet",
+      "group": "Tilat ja työympäristö",
+      "questions": [
+        "Q01",
+        "Q02"
+      ],
+      "features": [
+        "premises",
+        "nature",
+        "routes"
+      ],
+      "first": "Tunnista altistuvat varastot, laitteet ja kulkupaikat. Sovi omistajan kanssa, mitä voidaan siirtää, suojata tai käyttää toisin.",
+      "refs": {
+        "PK": [
+          9,
+          17,
+          29,
+          31
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Tulva-altistuksen yrityssovellus"
+    },
+    {
+      "id": "A03",
+      "title": "Sovi kosteusriskien tarkistuksesta",
+      "group": "Tilat ja työympäristö",
+      "questions": [
+        "Q03"
+      ],
+      "features": [
+        "premises"
+      ],
+      "first": "Sovi kiinteistön omistajan kanssa katon, sadevesien ohjauksen ja rakenteiden tarkistus sekä havaittujen puutteiden korjausvastuu.",
+      "refs": {
+        "PK": [
+          29
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Kunnossapidon yrityssovellus"
+    },
+    {
+      "id": "A04",
+      "title": "Tee helleajan työohje",
+      "group": "Ihmiset ja turvallinen työ",
+      "questions": [
+        "Q04"
+      ],
+      "features": [],
+      "first": "Sovi työn ajoitus, tauotus, viileään siirtyminen ja yhteyshenkilö kuumuuden haitatessa työtä. Tarkista työkohtaiset ratkaisut työterveyden kanssa.",
+      "refs": {
+        "PK": [
+          20,
+          28
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Työolojen hallinnan sovellus"
+    },
+    {
+      "id": "A05",
+      "title": "Selvitä tilojen viilennystarve",
+      "group": "Tilat ja työympäristö",
+      "questions": [
+        "Q04"
+      ],
+      "features": [
+        "premises"
+      ],
+      "first": "Tunnista kuumenevat työ- ja asiakastilat. Selvitä varjostus, ilmanvaihto ja jäähdytys yhdessä kiinteistön ylläpitäjän kanssa.",
+      "refs": {
+        "PK": [
+          29,
+          96
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Viilennysratkaisujen sovellus"
+    },
+    {
+      "id": "A06",
+      "title": "Varmista jäähdytyksen toiminta",
+      "group": "Tuotanto ja peruspalvelut",
+      "questions": [
+        "Q05"
+      ],
+      "features": [
+        "production",
+        "cold"
+      ],
+      "first": "Sovi kriittisten lämpötilojen seurannasta, huollosta ja toiminnasta jäähdytyksen häiriössä. Mitoitus ja tuoterajat tarkistetaan asiantuntijan kanssa.",
+      "refs": {
+        "PK": [
+          20,
+          30
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Jäähdytysriippuvuuden sovellus"
+    },
+    {
+      "id": "A07",
+      "title": "Arvioi varasähkön tarve",
+      "group": "Tuotanto ja peruspalvelut",
+      "questions": [
+        "Q06"
+      ],
+      "features": [],
+      "first": "Listaa katkon aikana tarvittavat laitteet ja siedettävä katkoaika. Selvitä turvallinen varavoima tai akkuvarmennus sähköalan ammattilaisen kanssa.",
+      "refs": {
+        "PK": [
+          19,
+          30
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Varavoiman yrityssovellus"
+    },
+    {
+      "id": "A08",
+      "title": "Harjoittele toimintaa ilman sähköä",
+      "group": "Tuotanto ja peruspalvelut",
+      "questions": [
+        "Q06",
+        "Q18"
+      ],
+      "features": [],
+      "first": "Käykää läpi turvallinen keskeytys, viestintä, väliaikainen toimintatapa ja hallittu käynnistys. Kirjatkaa, kuka tekee mitä.",
+      "refs": {
+        "PK": [
+          19,
+          20,
+          30
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Jatkuvuustoimen sovellus"
+    },
+    {
+      "id": "A09",
+      "title": "Sovi varayhteydet ja yhteystiedot",
+      "group": "Tuotanto ja peruspalvelut",
+      "questions": [
+        "Q07"
+      ],
+      "features": [],
+      "first": "Tunnista yhteyksistä riippuvat toiminnot ja testaa niiden varatapa palveluntarjoajan kanssa. Pidä tärkeät yhteystiedot saatavilla myös ilman verkkoa.",
+      "refs": {
+        "PK": [
+          20
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Tietoliikennekatkon sovellus"
+    },
+    {
+      "id": "A10",
+      "title": "Selvitä veden varajärjestely",
+      "group": "Tuotanto ja peruspalvelut",
+      "questions": [
+        "Q08"
+      ],
+      "features": [
+        "water"
+      ],
+      "first": "Määritä kriittisen veden määrä ja laatuvaatimukset. Sovi vesihuollon tai toimittajan kanssa katkosta tiedottaminen ja mahdollinen varajärjestely.",
+      "refs": {
+        "PK": [
+          30,
+          31,
+          96
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Vesivarmuuden sovellus"
+    },
+    {
+      "id": "A11",
+      "title": "Vähennä kuivuusherkkyyttä tuotannossa",
+      "group": "Luonnosta riippuva liiketoiminta",
+      "questions": [
+        "Q08",
+        "Q15"
+      ],
+      "features": [
+        "farm"
+      ],
+      "first": "Kartoita veden tarve ja maan kasvukunto. Selvitä neuvonnan kanssa kohteeseen sopiva vesienhallinta, kastelu ja viljelyn monipuolistaminen.",
+      "refs": {
+        "PK": [
+          26,
+          31
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Maatalouden sovellus"
+    },
+    {
+      "id": "A12",
+      "title": "Sovi vaihtoehtoinen kuljetustapa",
+      "group": "Hankinta ja toimitukset",
+      "questions": [
+        "Q09",
+        "Q12"
+      ],
+      "features": [
+        "routes"
+      ],
+      "first": "Käy kuljetuskumppanin kanssa läpi tärkein reitti, vaihtoehto ja tilanteet, joissa toimituksen ajankohtaa tai tapaa muutetaan.",
+      "refs": {
+        "PK": [
+          27,
+          96
+        ],
+        "IA": [
+          6,
+          9,
+          11
+        ]
+      },
+      "basis": "Logistiikan sovellus"
+    },
+    {
+      "id": "A13",
+      "title": "Tarkista pihan talvikunnossapito",
+      "group": "Ihmiset ja turvallinen työ",
+      "questions": [
+        "Q10"
+      ],
+      "features": [
+        "premises",
+        "outdoor",
+        "routes"
+      ],
+      "first": "Sovi liukkauden torjunta, lumityöt, sulamisvesien ohjaus ja työn tilaaminen myös nopeasti vaihtelevassa säässä.",
+      "refs": {
+        "PK": [
+          18,
+          27
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Talvikunnossapidon sovellus"
+    },
+    {
+      "id": "A14",
+      "title": "Sovi sään vuoksi keskeyttämisestä",
+      "group": "Ihmiset ja turvallinen työ",
+      "questions": [
+        "Q11",
+        "Q14"
+      ],
+      "features": [
+        "outdoor",
+        "nature",
+        "forest",
+        "farm"
+      ],
+      "first": "Sovi seurattavat varoitukset, päätöksentekijä ja yhteydenpito, kun työ tai asiakaspalvelu on keskeytettävä turvallisuuden vuoksi.",
+      "refs": {
+        "PK": [
+          27,
+          31,
+          32
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Varoitusten yrityssovellus"
+    },
+    {
+      "id": "A15",
+      "title": "Tarkista myrskylle alttiit rakenteet",
+      "group": "Tilat ja työympäristö",
+      "questions": [
+        "Q11"
+      ],
+      "features": [
+        "premises"
+      ],
+      "first": "Käy omistajan tai huollon kanssa läpi pihan puusto, kevyet rakenteet ja ulkovarastointi. Sovi tarvittavista asiantuntijatarkistuksista.",
+      "refs": {
+        "PK": [
+          19,
+          29
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Omaisuuden suojauksen sovellus"
+    },
+    {
+      "id": "A16",
+      "title": "Jousta töiden ja korjuun ajoituksessa",
+      "group": "Hankinta ja toimitukset",
+      "questions": [
+        "Q12"
+      ],
+      "features": [
+        "outdoor",
+        "forest",
+        "farm",
+        "routes"
+      ],
+      "first": "Tunnista kantavuudesta riippuvat työt ja sovi vaihtoehtoinen ajankohta, kohde tai menetelmä asiakkaan ja kuljetuskumppanin kanssa.",
+      "refs": {
+        "PK": [
+          18,
+          26,
+          27
+        ],
+        "IA": [
+          6,
+          9,
+          11
+        ]
+      },
+      "basis": "Kelirikkovarautumisen sovellus"
+    },
+    {
+      "id": "A17",
+      "title": "Suunnittele vaihtoehto lumikaudelle",
+      "group": "Asiakkaat ja palvelut",
+      "questions": [
+        "Q13"
+      ],
+      "features": [
+        "winter"
+      ],
+      "first": "Valitse yksi lumi- tai pakkasriippuvainen tuote ja suunnittele sille korvaava palvelu sekä muutosviestintä asiakkaalle.",
+      "refs": {
+        "PK": [
+          18,
+          31
+        ],
+        "IA": [
+          4,
+          9
+        ]
+      },
+      "basis": "Talvipalvelun sovellus"
+    },
+    {
+      "id": "A18",
+      "title": "Sovi jääolosuhteiden seurannasta",
+      "group": "Ihmiset ja turvallinen työ",
+      "questions": [
+        "Q13"
+      ],
+      "features": [
+        "ice"
+      ],
+      "first": "Jos palvelu käyttää luonnonjäätä, sovi olosuhdeseuranta, käytöstä päättäminen ja korvaava järjestely. Muuten tämä toimi ei ole tarpeen.",
+      "refs": {
+        "PK": [
+          18,
+          31
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Jääpalvelun sovellus"
+    },
+    {
+      "id": "A19",
+      "title": "Käy läpi maastopalon varautuminen",
+      "group": "Ihmiset ja turvallinen työ",
+      "questions": [
+        "Q14"
+      ],
+      "features": [
+        "outdoor",
+        "nature",
+        "forest",
+        "farm"
+      ],
+      "first": "Tunnista palolle altistuvat työt ja kohteet. Sovi varoitusten seuranta, työn rajoittaminen ja asiakkaiden tai henkilöstön ohjeistus.",
+      "refs": {
+        "PK": [
+          20,
+          32,
+          96
+        ],
+        "IA": [
+          9,
+          12
+        ]
+      },
+      "basis": "Palovarautumisen sovellus"
+    },
+    {
+      "id": "A20",
+      "title": "Seuraa luonnon muutoksia kohteessa",
+      "group": "Luonnosta riippuva liiketoiminta",
+      "questions": [
+        "Q15"
+      ],
+      "features": [
+        "nature",
+        "forest",
+        "farm"
+      ],
+      "first": "Valitse toiminnalle tärkeä luontokohde tai raaka-aine. Sovi kunnon, lajiston tai tuhojen seurannasta ja tarvittavasta asiantuntijayhteistyöstä.",
+      "refs": {
+        "PK": [
+          15,
+          26,
+          31,
+          32
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Luontoriippuvuuden sovellus"
+    },
+    {
+      "id": "A21",
+      "title": "Selvitä toimittajan sääriippuvuudet",
+      "group": "Hankinta ja toimitukset",
+      "questions": [
+        "Q16"
+      ],
+      "features": [],
+      "first": "Kysy tärkeimmältä toimittajalta tuotantopaikasta, kuljetuksista ja sääkatkoihin varautumisesta. Kirjaa, mitä tietoa vielä puuttuu.",
+      "refs": {
+        "PK": [
+          15
+        ],
+        "IA": [
+          4,
+          6,
+          9,
+          11
+        ]
+      },
+      "basis": "Arvoketjun yrityssovellus"
+    },
+    {
+      "id": "A22",
+      "title": "Valmistele vaihtoehto kriittiselle hankinnalle",
+      "group": "Hankinta ja toimitukset",
+      "questions": [
+        "Q16"
+      ],
+      "features": [],
+      "first": "Selvitä yksi korvaava toimittaja, materiaali tai toimintatapa. Arvioi vaihtamiseen kuluva aika ja mahdollisen puskurin tarve.",
+      "refs": {
+        "PK": [
+          15
+        ],
+        "IA": [
+          6,
+          9,
+          11
+        ]
+      },
+      "basis": "Riippuvuuden hallinnan sovellus"
+    },
+    {
+      "id": "A23",
+      "title": "Sovi asiakkaiden kanssa säämuutoksista",
+      "group": "Asiakkaat ja palvelut",
+      "questions": [
+        "Q09",
+        "Q13",
+        "Q17"
+      ],
+      "features": [],
+      "first": "Sovi, miten aikataulu-, palvelu- ja toimitusmuutoksista kerrotaan. Tarkista käytännöt myös peruuntuvalle tai siirtyvälle palvelulle.",
+      "refs": {
+        "PK": [
+          18,
+          22,
+          31
+        ],
+        "IA": [
+          4,
+          6,
+          9
+        ]
+      },
+      "basis": "Sääkysynnän sovellus"
+    },
+    {
+      "id": "A24",
+      "title": "Kokeile säästä vähemmän riippuvaa palvelua",
+      "group": "Asiakkaat ja palvelut",
+      "questions": [
+        "Q13",
+        "Q17"
+      ],
+      "features": [
+        "seasonal",
+        "nature",
+        "winter"
+      ],
+      "first": "Selvitä asiakkailta yhden korvaavan tai eri vuodenaikaan sopivan palvelun kysyntää ennen investointia. Tämä on kokeiluidea, ei tuottolupaus.",
+      "refs": {
+        "PK": [
+          18,
+          22,
+          31
+        ],
+        "IA": [
+          4,
+          9
+        ]
+      },
+      "basis": "Lähteen tukema mahdollisuus, yrityssovellus"
+    },
+    {
+      "id": "A25",
+      "title": "Tarkista vakuutusturva säävahinkojen varalta",
+      "group": "Johtaminen ja jatkuvuus",
+      "questions": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q05",
+        "Q09",
+        "Q11",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q18"
+      ],
+      "features": [],
+      "first": "Käy vakuuttajan kanssa läpi tunnistetut vahinko- ja keskeytystilanteet, korvausrajat ja suojeluohjeet. Vakuutus ei korvaa toiminnan varmistamista.",
+      "refs": {
+        "PK": [
+          26
+        ],
+        "IA": [
+          6,
+          9
+        ]
+      },
+      "basis": "Maa- ja metsävakuutuksista laajennettu yrityssovellus"
+    },
+    {
+      "id": "A26",
+      "title": "Päivitä jatkuvuuden toimintalista",
+      "group": "Johtaminen ja jatkuvuus",
+      "questions": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18"
+      ],
+      "features": [],
+      "first": "Nimeä palautettava ydintoiminto, siedettävä katkoaika ja ensimmäiset tehtävät. Sovi vastuista, kumppaneista ja seuraavasta tarkistuksesta.",
+      "refs": {
+        "PK": [
+          19,
+          20
+        ],
+        "IA": [
+          5,
+          6,
+          7,
+          9
+        ]
+      },
+      "basis": "Riskinhallinnan käytännön sovellus"
+    }
+  ],
+  "readiness": {
+    "basis": "IA PDF 9; työkalun oma hallintatoimien nykytilan sovellus",
+    "options": {
+      "none": "Varautumista ei vielä ole",
+      "developing": "Varautuminen on työn alla",
+      "planned": "Suunnitelma on olemassa",
+      "tested": "Suunnitelman toimivuutta on myös kokeiltu",
+      "unknown": "Varautumisen tilanne on selvitettävä"
+    },
+    "note": "Erillinen havaitusta tai mahdollisesta häiriöstä; suunnitelma ei merkitse toimia hoidetuksi."
+  }
+}
