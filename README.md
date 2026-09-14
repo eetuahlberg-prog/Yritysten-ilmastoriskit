@@ -110,3 +110,4 @@ Tallenna muutokset (Commit changes); Pages päivittää sivuston. Jos selain nä
 vanhaa versiota, päivitä sivu uudelleen esimerkiksi Ctrl+F5:llä. Älä tee tätä
 kesken tallentamattoman arvion. Jo käytössä olevaa repositoriota tai sen nimeä
 ei tarvitse vaihtaa työkalun otsikon muutoksen vuoksi.
+Päivitetty 14.9.2026.
