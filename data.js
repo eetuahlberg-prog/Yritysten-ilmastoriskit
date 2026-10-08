@@ -13,7 +13,7 @@ window.MODEL = {
   },
   "features": {
     "premises": "Toimitilat, piha tai varasto",
-    "production": "Tuotanto, koneet tai prosessit",
+    "production": "Tuotanto, koneet, kalusto tai laitteet",
     "cold": "Kylmäketju tai jäähdytys",
     "water": "Toiminta tarvitsee vettä",
     "outdoor": "Ulkotyö tai ulkona palveleminen",
@@ -490,7 +490,7 @@ window.MODEL = {
   "actions": [
     {
       "id": "A01",
-      "title": "Kartoita veden reitti kiinteistöllä",
+      "title": "Selvitä hulevesien kulkureitit kiinteistöllä",
       "group": "Tilat ja työympäristö",
       "questions": [
         "Q01"
@@ -498,7 +498,7 @@ window.MODEL = {
       "features": [
         "premises"
       ],
-      "first": "Käy kiinteistön ylläpitäjän kanssa läpi veden sisääntulokohdat, pihan kallistukset ja kuivatus. Nimeä tärkein tarkistettava kohta.",
+      "first": "Käy kiinteistön omistajan tai ylläpitäjän kanssa läpi hulevesien kulkureitit, pihan kallistukset, kuivatusratkaisut ja mahdolliset veden sisääntulokohdat. Tunnista tärkein tarkistettava kohta.",
       "refs": {
         "PK": [
           29
@@ -508,7 +508,9 @@ window.MODEL = {
           9
         ]
       },
-      "basis": "Kiinteistön vesienhallinnan yrityssovellus"
+      "basis": "Hulevesien hallinnan soveltaminen yrityskiinteistöihin",
+      "scope": "Hulevesien hallinnan soveltaminen yrityskiinteistöihin. Ensimmäinen askel on työkalua varten muotoiltu ehdotus. Sovi vastuista kiinteistön omistajan tai muun vastuullisen tahon kanssa. Mahdolliset tekniset ratkaisut ja niiden mitoitus on arvioitava kohdekohtaisesti.",
+      "planTask": "Selvitä omistajan tai ylläpitäjän kanssa hulevesien kulkureitit, pihan kallistukset, kuivatus ja veden sisääntulokohdat. Tunnista tärkein tarkistettava kohta."
     },
     {
       "id": "A02",
